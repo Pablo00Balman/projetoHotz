@@ -10,5 +10,5 @@ Todos os dados dos pacientes estavam espalhados em arquivos .txt. Para colocar u
 
 Atualmente o projeto se parece com isto:
 
-![alt text](https://raw.githubusercontent.com/Pablo00Balman/Employees-Project/main/demo.png)
+![alt text](https://raw.githubusercontent.com/Pablo00Balman/projetoHotz/main/Projeto.png)
 
