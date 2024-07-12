@@ -44,13 +44,21 @@ section{
     flex-direction: column;
     align-items: center;
 
-    width: 95%;
+    width: 100%;
 }
 
-.myBox{
+section a{
+    margin: 0;
+    padding: 0;
+
+    text-decoration: none;
+
     width: 100%;
     min-height: 80px;
     max-height: 100px;
+}
+
+.myBox{
 
     background-color: white;
 
@@ -61,6 +69,8 @@ section{
     font-size: 20px;
 
     box-shadow: 0 0 2.5em black;
+
+    color: black;
 
     will-change: transform;
     transition: transform 450ms;
@@ -76,6 +86,20 @@ section{
 
 .myBox p{
     margin: 1.5%;
+}
+
+#pai{
+    display: flex;
+}
+
+.info{
+    margin: 10px;
+    font-size: 22px;
+    width: 50%;
+}
+
+.info hr{
+    width: 50%;
 }
 
 footer{

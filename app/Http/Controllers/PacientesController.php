@@ -32,4 +32,12 @@ class PacientesController extends Controller
         );
         return view("pacientes", ['pacientes'=>$pacientes]);
     }
+
+    public function detalhes ($cpf){
+
+        $resposta = DB::select(
+            "SELECT * FROM pacientes WHERE cpf = '$cpf';"); 
+
+        return view('detalhes', ['resposta'=>$resposta]);
+    }
 }

@@ -16,6 +16,7 @@
 
     <section>
         @foreach($pacientes as $e)
+        <a href ='/paciente/{{$e->cpf}}'>
         <div class="myBox">
             <p> {{$e->cpf}} </p>
             <p> <i>{{$e->nome}} </i></p>
@@ -26,6 +27,7 @@
             <p><i>Índ. Cardíaco: {{$e->ind_cardiaco}}</i></p>
             <p><i>Índ. Pulmonar: {{$e->ind_pulmonar}}</i></p>
         </div>
+        </a>        
         @endforeach
     </section>
 
