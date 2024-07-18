@@ -38,6 +38,10 @@ class PacientesController extends Controller
         $resposta = DB::select(
             "SELECT * FROM pacientes WHERE cpf = '$cpf';"); 
 
-        return view('detalhes', ['resposta'=>$resposta]);
+        $ind_card = DB::select("SELECT epoch, ind_cardiaco FROM ind_cardiaco WHERE cpf = '$cpf';");
+
+        $ind_pulm = DB::select("SELECT epoch, ind_pulmonar FROM ind_pulmonar WHERE cpf = '$cpf';");
+        
+        return view('detalhes', ['resposta'=>$resposta, 'ind_card'=>$ind_card, 'ind_pulm'=>$ind_pulm]);
     }
 }

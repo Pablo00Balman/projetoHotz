@@ -90,12 +90,20 @@ section a{
 
 #pai{
     display: flex;
+    background-color: white;
+    margin: 1vw;
+    border-radius: 5%;
+    width: 80%;
+
+    box-shadow: 0 0 1em black;
 }
 
 .info{
     margin: 10px;
     font-size: 22px;
     width: 50%;
+
+    
 }
 
 .info hr{
@@ -125,4 +133,14 @@ footer{
     font-size: large;
 
     text-align: center;
+}
+
+/*Canvas*/
+
+.grafico{
+    width: 1000px;
+    height: 400px;
+    border-radius: 20px;
+
+    box-shadow: 0 0 1em black;
 }
